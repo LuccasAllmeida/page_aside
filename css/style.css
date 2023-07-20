@@ -477,20 +477,38 @@ aside img{
     background-color: rgba(88, 88, 88, 0.5);
 }
 
+.menu_mob{
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin: 40px 0px;
+    margin-right: 20px;
+}
+
+.menu_mob:hover{
+    cursor: pointer;
+}
+
+.mm{
+    height: 3px;
+    background-color: #39aae1;
+
+}
+
 
 /* Media*/
 
 
-@media screen and (max-widht:700px) {
-    .banner_headline {
+@media screen and (max-width:800px) {
+    .headline {
         padding: 20px;
     }
 
-    .banner_headline h1{
+    .headline h1{
         font-size: 50px
     }
 
-    .banner_headline h4{
+    .headline h4{
         font-size: 15px;
     }
 
@@ -504,8 +522,16 @@ aside img{
         width: 100%;
     }
 
-    #geral section, #geral aside {
+    #geral section, #geral2 aside {
         padding: 20px;
+    }
+
+    #geral .widget_title_text {
+        margin-top: 50px;
+    }
+
+    .widget_title {
+        padding: 30px;
     }
 
     .footer_menu{
@@ -519,6 +545,35 @@ aside img{
 
     .footer_copy {
         padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: aliceblue;
+
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menu_mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
     }
 
 }
